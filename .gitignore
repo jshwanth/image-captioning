@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large / generated files
+baseline_model.h5
+tokenizer.pkl
+
+# Images / temp files
+Images/
+.venv/
+temp.jpg
+
+# OS files
+.DS_Store
+captions.txt
+metadata.pkl
+requirements.txt
