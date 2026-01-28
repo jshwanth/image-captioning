@@ -1,25 +1,27 @@
 # Python
 __pycache__/
 *.pyc
-.venv/
+*.pyo
+*.pyd
 
-# VS Code
+# Virtual environments
+.venv/
+env/
+venv/
+
+# IDE
 .vscode/
 
-# Jupyter
-.ipynb_checkpoints/
+# Datasets
+data/
 
-# Large / generated files
-baseline_model.h5
-tokenizer.pkl
+#models
+models/
 
-# Images / temp files
-Images/
-.venv/
+# Temporary files
 temp.jpg
+*.log
 
-# OS files
+# OS
 .DS_Store
-captions.txt
-metadata.pkl
-requirements.txt
+Thumbs.db
