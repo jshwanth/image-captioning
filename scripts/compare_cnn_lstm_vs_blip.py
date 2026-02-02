@@ -17,17 +17,39 @@ from tensorflow.keras.applications.densenet import DenseNet201
 from transformers import BlipProcessor, BlipForConditionalGeneration
 
 # ===============================
-# CONFIG
+# PATH CONFIG (GITHUB-SAFE)
 # ===============================
 
-FRAMES_ROOT = r"C:\ML projects\Image captioning\msvd_progress_frames\content\msvd_progress_frames"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+FRAMES_ROOT = os.path.join(
+    PROJECT_ROOT,
+    "data",
+    "msvd_progress_frames"
+)
+
 MAX_FRAMES = 8
 
-CNN_MODEL_PATH = "baseline_model.h5"
-TOKENIZER_PATH = "tokenizer.pkl"
-METADATA_PATH = "metadata.pkl"
+CNN_MODEL_PATH = os.path.join(
+    PROJECT_ROOT,
+    "models",
+    "baseline_model.h5"
+)
+
+TOKENIZER_PATH = os.path.join(
+    PROJECT_ROOT,
+    "models",
+    "baseline_tokenizer.pkl"
+)
+
+METADATA_PATH = os.path.join(
+    PROJECT_ROOT,
+    "models",
+    "baseline_metadata.pkl"
+)
 
 BLIP_MODEL_NAME = "Salesforce/blip-image-captioning-base"
+
 
 # ===============================
 # LOAD RANDOM VIDEO
