@@ -95,8 +95,8 @@ project/
  - Plotly
 
  ## Results
- ![alt text](<Screenshot 2026-03-05 194228.png>)
- ![alt text](<Screenshot 2026-03-05 194308.png>)
+ ![alt text](<data/Screenshot 2026-03-05 194228.png>)
+ ![alt text](<data/Screenshot 2026-03-05 194308.png>)
 
- 
+
 
