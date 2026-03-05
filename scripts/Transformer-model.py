@@ -85,23 +85,28 @@ for i, cap in enumerate(captions):
     print(f"Frame {i}: {cap}")
 
 # ===============================
-# VISUALIZATION
+# VISUALIZATION (BETTER SPACING)
 # ===============================
 
-fig, axes = plt.subplots(1, len(images), figsize=(4 * len(images), 5))
+cols = 4
+rows = (len(images) + cols - 1) // cols
 
-if len(images) == 1:
-    axes = [axes]
+fig, axes = plt.subplots(rows, cols, figsize=(16, 6))
+
+axes = axes.flatten()
 
 for i, ax in enumerate(axes):
-    ax.imshow(images[i])
-    ax.set_title(f"Frame {i}\n{captions[i]}", fontsize=10)
-    ax.axis("off")
+    if i < len(images):
+        ax.imshow(images[i])
+        ax.set_title(f"Frame {i}\n{captions[i]}", fontsize=10)
+        ax.axis("off")
+    else:
+        ax.axis("off")
 
 plt.suptitle(
     f"BLIP Frame-Level Captioning (MSVD)\nVideo ID: {VIDEO_ID}",
-    fontsize=14
+    fontsize=16
 )
-
-plt.tight_layout()
+# plt.figure(dpi =300)
+plt.tight_layout(rect=[0, 0, 1, 0.92])
 plt.show()

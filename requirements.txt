@@ -4,3 +4,16 @@ transformers
 pillow
 tqdm
 opencv-python
+gradio
+numpy
+gradio
+tensorflow
+torch
+transformers
+numpy
+pandas
+pillow
+plotly
+matplotlib
+nltk
+wordcloud
