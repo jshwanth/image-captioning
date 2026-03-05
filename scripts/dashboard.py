@@ -73,7 +73,7 @@ def compute_metrics(refs, pred):
 # ------------------------------------------------
 # SIDEBAR & HEADER
 # ------------------------------------------------
-st.title("📽️ Neural Video Captioning Benchmarking")
+st.title("📽️ Neural Image Captioning Benchmarking")
 st.caption("Comparative analysis of CNN-LSTM, Visual Attention, and BLIP (Bootstrapping Language-Image Pre-training)")
 
 with st.sidebar:
