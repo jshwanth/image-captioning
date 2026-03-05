@@ -94,9 +94,10 @@ project/
  - Streamlit
  - Plotly
 
- ## Results
- ![alt text](<data/Screenshot 2026-03-05 194228.png>)
- ![alt text](<data/Screenshot 2026-03-05 194308.png>)
+## Results
+ <img width="1030" height="459" alt="Screenshot 2026-03-05 194228" src="https://github.com/user-attachments/assets/c502dec7-9635-4b11-8419-de408e5047b6" />
+<img width="1429" height="772" alt="Screenshot 2026-03-05 194308" src="https://github.com/user-attachments/assets/214fde27-7c67-4a3d-864b-d19b3650bcba" />
+ 
 
 
 
